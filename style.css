@@ -50,6 +50,7 @@ input[type="submit"]:active,
 input[type="button"]:focus,
 input[type="submit"]:focus {
   outline: none;
+  transform: scale(0.98);
 }
 
 .highlight {
