@@ -288,14 +288,7 @@ footer {
   display: flex;
   margin: 10px;
 }
-.link-logo {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
+
 .social-link {
   display: inline-flex;
   align-items: center;
