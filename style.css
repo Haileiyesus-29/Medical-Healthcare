@@ -43,10 +43,8 @@ input[type="button"],
 input[type="submit"] {
   cursor: pointer;
 }
-button:active,
+
 button:focus,
-input[type="button"]:active,
-input[type="submit"]:active,
 input[type="button"]:focus,
 input[type="submit"]:focus {
   outline: none;
@@ -104,6 +102,10 @@ nav > * {
   color: #000;
   font-weight: bold;
 }
+.login-link:focus,
+.signup-link:focus {
+  transform: scale(0.98);
+}
 .login-link {
   background-color: var(--color-primary);
 }
@@ -130,10 +132,18 @@ nav > * {
   font-size: 2rem;
 }
 
+.video-element {
+  width: 65%;
+  /* height: 350px; */
+  display: block;
+  margin: 3rem auto;
+}
+
 .testimonials {
   background: var(--gradient-primary);
   padding: 4rem 3rem;
   position: relative;
+  z-index: -10;
 }
 
 .testimonial-container {
@@ -295,4 +305,23 @@ footer {
   align-items: center;
   min-height: 100%;
   margin-left: 1rem;
+}
+
+.address-container {
+  flex-basis: 30%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address-container table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.address-container .table-header {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
