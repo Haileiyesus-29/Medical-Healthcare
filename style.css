@@ -39,7 +39,7 @@ a:active {
   color: inherit;
 }
 button,
-input[type="button"],
+label[type="button"],
 input[type="submit"] {
   cursor: pointer;
 }
@@ -324,4 +324,108 @@ footer {
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
+}
+/* i have only changed thing below  */
+/* style change idea */
+/* make change to login and signUp links  */
+.no-account a{
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+/* change the text befire the links of login and signup */
+
+/*Media Queries */
+@media screen and (max-width:644px) {
+  
+  .login-message {
+    font-size: 1.5rem;
+    padding-left: 3rem;
+    line-height: 2.4rem;
+    margin: 2rem 0;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+  
+  .nav-links-container{
+    display: none;
+  }
+  
+}
+@media screen and (max-width:480px) {
+
+  .login-message {
+    font-size: 1.2rem;
+    padding-left: 3rem;
+    line-height: 2.4rem;
+    margin: 2rem 0;
+  }
+  .login-form > div {
+    display: block;
+    margin: 1rem 0;
+  }
+  .login-container label {
+    white-space: nowrap;
+    display: block;
+    padding: 0.4rem 2rem;
+    font-weight: bold;
+  }
+  .login-container input {
+   height: 50px;
+   width: 70%;
+   margin: auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width:415px) {
+
+  .login-container {
+    width: 100vw; 
+    margin: 0; 
+    padding: auto;
+  }
+  .login-message {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: auto;
+    margin: 0;
+  }
+  .login-form{
+    padding: 0;
+    width: 100%;
+  }
+  .login-container label {
+    display: block;
+    font-weight: bold;
+    margin:auto;
+  }
+  .login-container input {
+   height: 50px;
+   width: 100%;
+   margin: auto;
+   display: block;
+  }
+  .submit-btn{
+    width: 100vw;
+    font-weight: bolder;
+    border: 2px solid black;
+    border-radius: 0px;
+    font-size: 1.2rem;
+  }
+
+  header {
+    position:absolute;
+  }
+  a.main-title{
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+    margin: auto;
+  }
+
+  footer{
+    width: 100vw;
+  }
 }
