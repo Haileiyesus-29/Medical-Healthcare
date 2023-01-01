@@ -12,6 +12,7 @@
   --color-dim-light: #f3f3f3;
   --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+  scroll-behavior: smooth;
 }
 
 * {
@@ -41,7 +42,7 @@ a:active {
 button,
 input[type="button"],
 input[type="submit"] {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 button:focus,
@@ -68,57 +69,81 @@ input[type="submit"]:focus {
   transform: scale(1.07, 1.05) skewX(-15deg);
   background-image: var(--gradient-primary);
 }
-/* header styling */
+
+.hidden {
+  display: none;
+}
+/* //////////////////////////////////////////////////////////////
+//////////////    HEADER PAGE STYLING ////////////////////////
+////////////////////////////////////////////////////////////// */
+
 header {
   position: fixed;
   top: 0;
   width: 100%;
   background-color: var(--color-light);
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  height: 5rem;
-  z-index: 10;
-}
-nav > * {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0 3rem;
-}
+/* NAV PANEL */
 .nav-links-container {
-  flex-basis: 30%;
-  min-width: 300px;
   display: flex;
-  justify-content: space-evenly;
-}
-.nav-links-container a {
-  width: 10rem;
-  margin: 0 10px;
-  text-align: center;
-  border-radius: 50px;
-  padding: 5px;
-  color: #000;
-  font-weight: bold;
-}
-.login-link:focus,
-.signup-link:focus {
-  transform: scale(0.98);
-}
-.login-link {
-  background-color: var(--color-primary);
-}
-.signup-link {
-  padding: 2px !important;
-  outline: 3px solid var(--color-primary);
+  justify-content: right;
+  height: 5rem;
+  padding: 0px 1rem;
 }
 .main-title {
+  margin-right: auto !important;
   font-size: 1.5rem;
 }
 
-/* main body styling */
+.nav-links-container > * {
+  padding: 10px;
+  margin: 0 5px;
+  align-self: center;
+}
 
+.nav-links {
+  text-align: center;
+  font-weight: bold;
+}
+.nav-links-active {
+  color: var(--color-primary);
+}
+.nav-links:hover {
+  color: var(--color-primary);
+  border-bottom: 3px solid var(--color-primary);
+}
+.login-link:hover {
+  color: white;
+}
+.nav-links:focus {
+  transform: scale(0.98);
+}
+.login-link:hover {
+  border-bottom: 3px solid #444;
+}
+.login-link,
+.signup-link {
+  border-radius: 50px;
+  min-width: 6rem;
+  font-weight: bold;
+}
+.login-link {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  background-color: var(--color-primary);
+  color: #000;
+}
+.signup-link {
+  padding: 2px !important;
+  color: #000;
+  outline: 3px solid var(--color-primary);
+}
+
+/* //////////////////////////////////////////////////////////////
+//////////////    MAIN PAGE STYLING ////////////////////////
+////////////////////////////////////////////////////////////// */
+
+/* ABOUT US */
 .about-us {
   margin: 2rem auto;
   width: 65%;
@@ -131,19 +156,23 @@ nav > * {
   margin-bottom: 1rem;
   font-size: 2rem;
 }
+.about-us-body {
+  word-spacing: 0.2rem;
+  line-height: 2.3rem;
+}
 
+/* VIDEO */
 .video-element {
   width: 65%;
-  /* height: 350px; */
   display: block;
   margin: 3rem auto;
 }
 
+/* TESTIMONIAL */
 .testimonials {
   background: var(--gradient-primary);
   padding: 4rem 3rem;
   position: relative;
-  z-index: -10;
 }
 
 .testimonial-container {
@@ -216,14 +245,17 @@ nav > * {
   transform: translateY(-50%);
 }
 
-/* login-page styling */
+/* /////////////////////////////////////////////////////////////
+//////////////    LOGIN PAGE STYLING    ////////////////////////
+////////////////////////////////////////////////////////////////*/
+
 .login-container {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
   border-radius: 10px;
   width: 90%;
   max-width: 570px;
   min-height: 350px;
-  margin: 2rem auto;
+  margin: 2rem auto 4rem;
   padding: 1rem 2rem;
 }
 .login-message {
@@ -241,7 +273,8 @@ nav > * {
   display: flex;
   margin: 1rem 0;
 }
-.login-container label {
+.login-container
+  label:not(.gender-labels-hidden, .gender-labels, .employee-label) {
   flex-basis: 40%;
   flex-shrink: 0;
   padding: 0.4rem 2rem;
@@ -280,8 +313,72 @@ input::placeholder {
 .no-account a {
   color: blue;
 }
+.gender-labels {
+  width: 60px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.gender-labels-hidden {
+  /* display: inline-flex;
+  justify-content: center;
+  align-items: center; */
+  width: 25px;
+  height: 25px;
+  align-self: center;
+  font-size: 1.8rem;
+  font-weight: 900;
+  border-radius: 50px;
+  border: 2px solid #888;
+  background-color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.radio-checked {
+  border-color: var(--color-primary-darker);
+  background-color: var(--color-primary);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.199);
+}
+.employee-label {
+  background-color: #fff;
+  width: 3.5rem;
+  height: 1.8rem;
+  border-radius: 50px;
+  outline: 3px solid #888;
+  align-self: center;
+  position: relative;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.employee-label .checkbox-ball {
+  display: inline-block;
+  height: 1.8rem;
+  outline: 3px solid #888;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: initial;
+  background-color: #888;
+  width: 1.8rem;
+  align-self: center;
+}
+.employee-label.active {
+  outline-color: var(--color-primary-darker);
+  left: auto;
+  right: 0;
+}
+.checkbox-ball.active {
+  outline-color: var(--color-primary);
+  background-color: var(--color-primary);
+  left: initial;
+  right: 0;
+}
+/* //////////////////////////////////////////////////////////////
+//////////////    FOOTER PAGE STYLING ////////////////////////
+////////////////////////////////////////////////////////////// */
 
-/* footer styling */
 footer {
   background-color: #444;
   color: var(--color-light);
@@ -291,6 +388,8 @@ footer {
   width: 100%;
   box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
 }
+
+/* SOCIAL LINKS */
 .social-links-container {
   flex-basis: 30%;
   margin: 1rem 2rem;
@@ -307,6 +406,7 @@ footer {
   margin-left: 1rem;
 }
 
+/* ADDRESS */
 .address-container {
   flex-basis: 30%;
   flex-shrink: 0;

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>Medical Healthcare | Sign Up</title>
+  </head>
+  <body>
+    <!-- HEADER PAGE STARTS HERER -->
+    <header>
+      <nav class="nav-links-container">
+        <a href="../index.html" class="main-title"
+          ><i class="fa-solid fa-stethoscope"></i>&nbsp; Medical Healthcare</a
+        >
+        <a href="login.html" class="nav-links login-link">LOGIN</a>
+        <a href="signup.html" class="nav-links signup-link">SIGNUP</a>
+      </nav>
+    </header>
+
+    <!-- MAIN PAGE STARTS HERE -->
+    <main class="login-container">
+      <div class="login-message">
+        Let's connect &nbsp;
+        <span class="highlight"> to your healthy </span><br />
+        life at &nbsp; <span class="highlight"> the best</span> hospital
+      </div>
+      <form action="home.html" method="get" class="login-form">
+        <div class="signup-firstname">
+          <label for="firstname">First Name</label>
+          <input
+            type="text"
+            id="firstname"
+            class="firstname"
+            placeholder="your first name"
+          />
+        </div>
+        <div class="signup-lastname">
+          <label for="lastname">Last Name</label>
+          <input
+            type="text"
+            id="lastname"
+            class="lastname"
+            placeholder="your last name"
+          />
+        </div>
+        <div class="signup-email">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="email"
+            placeholder="your email"
+          />
+        </div>
+        <div class="signup-gender">
+          <label for="gender">Gender</label>
+          <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            class="gender-inputs hidden"
+          />
+          <label for="male" class="gender-labels-hidden radio-checked"></label>
+          <!-- right tick code &#x2713; -->
+          <label for="male" class="gender-labels">Male</label>
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            class="gender-inputs hidden"
+          />
+          <label for="female" class="gender-labels-hidden"></label>
+          <label for="female" class="gender-labels">Female</label>
+        </div>
+        <div class="signup-employee">
+          <label for="employee">Employee?</label>
+          <input
+            type="checkbox"
+            name="employee"
+            id="employee"
+            class="employee-input hidden"
+          />
+          <label for="employee" class="employee-label active"
+            ><span class="checkbox-ball active"></span
+          ></label>
+        </div>
+        <div class="signup-phone">
+          <label for="phone">Phone #</label>
+          <input
+            type="text"
+            id="phone"
+            class="phone"
+            placeholder="XXX-XXX-XXX-XXX"
+          />
+        </div>
+        <div class="signup-address">
+          <label for="address">Address</label>
+          <input
+            type="text"
+            id="address"
+            class="address"
+            placeholder="your address"
+          />
+        </div>
+        <div class="submit-container">
+          <input
+            type="submit"
+            id="submit"
+            class="submit-btn"
+            value="NEXT &rarr;"
+          />
+          <div class="no-account">
+            already have an account? <a href="login.html">login</a>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <!-- FOOTER PAGE STARTS HERE -->
+    <footer>
+      <div class="social-links-container">
+        <div>
+          <a href="#" class="social-link">
+            <i class="fa-brands fa-youtube"></i>&nbsp; YouTube</a
+          >
+        </div>
+        <div>
+          <a href="#" class="social-link"
+            ><i class="fa-brands fa-facebook"></i>&nbsp;Facebook</a
+          >
+        </div>
+        <div>
+          <a href="#" class="social-link"
+            ><i class="fa-brands fa-twitter"></i>&nbsp; Twitter</a
+          >
+        </div>
+        <div>
+          <a href="#" class="social-link"
+            ><i class="fa-brands fa-instagram"></i>&nbsp;Instagram</a
+          >
+        </div>
+      </div>
+      <div class="address-container">
+        <table>
+          <tr>
+            <td colspan="2" class="table-header">Reach Us on</td>
+          </tr>
+          <tr>
+            <td>City</td>
+            <td>Addis Ababa</td>
+          </tr>
+          <tr>
+            <td>Street</td>
+            <td>some road 232</td>
+          </tr>
+          <tr>
+            <td>P.O.Box</td>
+            <td>4234</td>
+          </tr>
+          <tr>
+            <td>tel</td>
+            <td>+251987654321</td>
+          </tr>
+        </table>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
