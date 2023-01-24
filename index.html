@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <title>Medical Healthcare | Welcome</title>
+    <title>Welcome | Medical Healthcare</title>
   </head>
   <body>
     <!-- HEADER PAGE STARTS HERER -->
@@ -17,14 +17,22 @@
         <a href="./index.html" class="main-title"
           ><i class="fa-solid fa-stethoscope"></i>&nbsp; Medical Healthcare</a
         >
-        <a href="./Views/login.html" class="nav-links login-link">LOGIN</a>
-        <a href="./Views/signup.html" class="nav-links signup-link">SIGNUP</a>
+        <a
+          href="./Views/login.html"
+          class="nav-links btn login-link center-inside"
+          >LOGIN</a
+        >
+        <a
+          href="./Views/signup.html"
+          class="nav-links btn center-content signup-link center-inside"
+          >SIGNUP</a
+        >
       </nav>
     </header>
 
     <!-- MAIN PAGE STARTS HERE -->
     <main>
-      <div id="about-us" class="about-us">
+      <section id="about-us" class="about-us">
         <div class="about-us-title">Medical Healthcare programs</div>
         <div class="about-us-body">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos magni,
@@ -40,7 +48,7 @@
           laborum quas voluptates numquam, dignissimos, officiis autem. Culpa
           tenetur incidunt asperiores dolorem cum?
         </div>
-      </div>
+      </section>
       <div class="video-container">
         <video
           src="HealthCare.mp4"
@@ -51,7 +59,8 @@
         ></video>
       </div>
       <div id="testimonials" class="testimonials">
-        <div class="scroller scroller-left">&langle;</div>
+        <div class="scroller center-inside scroller-left">&langle;</div>
+        <div class="scroller center-inside scroller-right">&rangle;</div>
         <div class="testimonial-container">
           <div class="testimonial-body">
             <span class="testimonial-title">The best health service!</span>
@@ -73,7 +82,6 @@
             </a>
           </div>
         </div>
-        <div class="scroller scroller-right">&rangle;</div>
       </div>
     </main>
 
@@ -124,7 +132,11 @@
           </tr>
         </table>
       </div>
+      <div class="copyright">
+        developed by AASTU 3<sup>rd</sup> year section B group 3 software
+        engineering students &copy;2023
+      </div>
     </footer>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
