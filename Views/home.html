@@ -14,14 +14,14 @@
     <!-- HEADER PAGE STARTS HERER -->
     <header>
       <nav class="nav-links-container">
-        <a href="../index.html" class="main-title"
+        <a href="../index.html"
           ><i class="fa-solid fa-stethoscope"></i>&nbsp; Medical Healthcare</a
         >
-        <a href="home.html" class="nav-links nav-links-active">HOME</a>
-        <a href="#" class="nav-links">PHARMACY</a>
-        <a href="#" class="nav-links">PROFILE</a>
+        <a href="home.html" class="nav-links active">HOME</a>
+        <a href="pharmacy.html" class="nav-links">PHARMACY</a>
+        <a href="profile.html" class="nav-links">PROFILE</a>
         <a href="about.html" class="nav-links">ABOUT</a>
-        <a href="../index.html" class="nav-links login-link">LOGOUT</a>
+        <a href="../index.html" class="nav-links btn login-link">LOGOUT</a>
       </nav>
     </header>
     <!-- MAIN PAGE STARTS HERE -->
@@ -32,20 +32,20 @@
             <img src="../user.png" width="50" alt="img" />
             <a href="#" class="home-profile-name">John Doe</a>
           </div>
-          <a href="#" class="home-profile-messages"
+          <a href="messages.html" class="home-profile-messages"
             >Messages <span class="stats">12</span></a
           >
-          <a href="#" class="home-profile-notifications"
+          <!-- <a href="#" class="home-profile-notifications"
             >Notifications <span class="stats">12</span></a
-          >
-          <a href="#" class="home-profile-following"
+          > -->
+          <!-- <a href="#" class="home-profile-following"
             >Following <span class="stats">12</span></a
           >
           <a href="#" class="home-profile-follower"
             >Follower <span class="stats">12</span></a
-          >
+          > -->
         </div>
-        <div class="home-section home-section-right">
+        <div class="home-section home-section-middle">
           <div class="home-feed-container">
             <div class="home-feed-profile-link">
               <img
@@ -138,6 +138,14 @@
           </div>
           <a href="#" class="next-feed-btn btn">See more &rarr;</a>
         </div>
+        <div class="home-section home-section-right home-post-container">
+          <p>Try post something now!</p>
+          <form action="#">
+            <textarea name="input-text" id="home-post-content"></textarea>
+            <input type="file" name="post-picture" id="post-picture" />
+            <input type="submit" value="POST" />
+          </form>
+        </div>
       </div>
     </main>
     <!-- FOOTER PAGE STARTS HERE -->
@@ -186,6 +194,10 @@
             <td>+251987654321</td>
           </tr>
         </table>
+      </div>
+      <div class="copyright">
+        developed by AASTU 3<sup>rd</sup> year section B group 3 software
+        engineering students &copy;2023
       </div>
     </footer>
     <!-- <script src="script.js"></script> -->

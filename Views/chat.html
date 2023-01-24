@@ -8,58 +8,44 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <title>Login | Medical Healthcare</title>
+    <title>Chat | Medical Healthcare</title>
   </head>
   <body>
     <!-- HEADER PAGE STARTS HERER -->
     <header>
+      <!-- prettier-ignore -->
       <nav class="nav-links-container">
-        <a href="../index.html" class="main-title"
-          ><i class="fa-solid fa-stethoscope"></i>&nbsp; Medical Healthcare</a
-        >
-        <a href="login.html" class="nav-links btn login-link">LOGIN</a>
-        <a href="signup.html" class="nav-links btn signup-link">SIGNUP</a>
+        <a href="../index.html" class="main-title"><i class="fa-solid fa-stethoscope"></i>&nbsp; Medical Healthcare</a>
+        <a href="home.html" class="nav-links">HOME</a>
+        <a href="pharmacy.html" class="nav-links">PHARMACY</a>
+        <a href="profile.html" class="nav-links">PROFILE</a>
+        <a href="about.html" class="nav-links active">ABOUT</a>
+        <a href="../index.html" class="nav-links btn login-link">LOGOUT</a>
       </nav>
     </header>
-
     <!-- MAIN PAGE STARTS HERE -->
-    <main class="login-container">
-      <div class="login-message">
-        Let's connect &nbsp;
-        <span class="highlight"> to your healthy </span><br />
-        life at &nbsp; <span class="highlight"> the best</span> hospital
+    <main>
+      <!-- prettier-ignore -->
+      <div class="chat-container">
+        <a href="#" class="chat-header">
+          <img src="../user.png" alt="pp" />
+          <span class="chat-name">John Doe</span>
+        </a>
+        <div class="chat-message-container">
+            <span class="chat-messages">Lorem, ipsum dolor.</span>
+            <span class="chat-messages">Lorem, ipsum dolor.</span>
+            <span class="chat-messages">Lorem, ipsum dolor.</span>
+            <span class="chat-messages">Lorem, ipsum dolor.</span>
+            <span class="chat-messages">Lorem, ipsum dolor.</span>
+            <span class="chat-messages">Lorem, ipsum dolor.</span>
+        </div>
+        <form action="#">
+          <input type="text" id="chat-send" placeholder="write message here" />
+          <input type="submit" value="send &raquo;" />
+        </form>
       </div>
-      <form action="home.html" method="get" class="login-form">
-        <div class="email-container">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="your email"
-            name="email"
-            class="email"
-          />
-        </div>
-        <div class="password-container">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="your password"
-            class="password"
-          />
-        </div>
-        <div class="submit-container">
-          <input type="submit" value="LOGIN" id="submit" class="submit-btn" />
-          <div class="no-account">
-            didn't have an account? <a href="signup.html">register</a>
-          </div>
-        </div>
-      </form>
     </main>
-
-    <!-- FOOTOR PAGE STARTS HERE -->
+    <!-- FOOTER PAGE STARTS HERE -->
     <footer>
       <div class="social-links-container">
         <div>
