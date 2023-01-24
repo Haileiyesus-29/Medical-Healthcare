@@ -108,6 +108,9 @@ input[type="submit"]:hover {
 .active {
   color: var(--color-primary);
 }
+label::selection {
+  user-select: none;
+}
 
 /* //////////////////////////////
 /////// HEADER PAGE STYLING /////
@@ -531,12 +534,14 @@ main {
   outline-color: var(--color-primary-darker);
   left: auto;
   right: 0;
+  transition: all 0.15s ease;
 }
 .checkbox-ball.active {
   outline-color: var(--color-primary);
   background-color: var(--color-primary);
   left: initial;
   right: 0;
+  transition: all 0.15s ease;
 }
 
 /* /////////////////////////////////////////////////////////////
