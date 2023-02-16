@@ -9,11 +9,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <title>Sign Up | Medical Healthcare</title>
+    <script defer src="../Scripts/formControl.js"></script>
     <script defer src="../script.js"></script>
   </head>
   <body>
     <!-- HEADER PAGE STARTS HERER -->
-    <header>
+    <header class="landing-page">
+      <div class="nav-icon">
+        <!-- <i class="fa-solid fa-xmark"></i> -->
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <nav class="nav-links-container">
         <a href="../index.html" class="main-title"
           ><i class="fa-solid fa-stethoscope"></i>&nbsp; Medical Healthcare</a
@@ -34,7 +39,7 @@
         <span class="highlight"> to your healthy </span><br />
         life at &nbsp; <span class="highlight"> the best</span> hospital
       </div>
-      <form action="home.html" method="get" class="login-form">
+      <form action="home.html" method="get" class="login-form signup-form">
         <div class="signup-firstname">
           <label for="firstname">First Name</label>
           <input
@@ -96,6 +101,15 @@
             ><span class="checkbox-ball active"></span
           ></label>
         </div>
+        <div class="signup-password">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="password"
+            placeholder="**********"
+          />
+        </div>
         <div class="signup-phone">
           <label for="phone">Phone #</label>
           <input
@@ -119,7 +133,7 @@
             type="submit"
             id="submit"
             class="submit-btn"
-            value="NEXT &rarr;"
+            value="Create &rarr;"
           />
           <div class="no-account">
             already have an account? <a href="login.html">login</a>

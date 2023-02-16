@@ -9,10 +9,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <title>Welcome | Medical Healthcare</title>
+    <script defer src="./Scripts/testimonials.js"></script>
+    <script defer src="./script.js"></script>
   </head>
   <body>
     <!-- HEADER PAGE STARTS HERER -->
-    <header>
+    <header class="landing-page">
+      <div class="nav-icon">
+        <!-- <i class="fa-solid fa-xmark"></i> -->
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <nav class="nav-links-container">
         <a href="./index.html" class="main-title"
           ><i class="fa-solid fa-stethoscope"></i>&nbsp; Medical Healthcare</a
@@ -61,25 +67,69 @@
       <div id="testimonials" class="testimonials">
         <div class="scroller center-inside scroller-left">&langle;</div>
         <div class="scroller center-inside scroller-right">&rangle;</div>
-        <div class="testimonial-container">
-          <div class="testimonial-body">
-            <span class="testimonial-title">The best health service!</span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            non a doloremque dicta, inventore quisquam fugit mollitia recusandae
-            hic delectus?
+        <div class="testimonials-parent">
+          <div class="testimonial-container">
+            <div class="testimonial-body">
+              <span class="testimonial-title">The best health service!</span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              non a doloremque dicta, inventore quisquam fugit mollitia
+              recusandae hic delectus?
+            </div>
+            <div class="testimonial-header">
+              <img
+                src="user.png"
+                width="40"
+                height="40"
+                alt="img"
+                class="testimonial-img"
+              />
+              <a href="#">
+                <span class="testimonial-name">John Doe</span>
+                <address>Newyork Us</address>
+              </a>
+            </div>
           </div>
-          <div class="testimonial-header">
-            <img
-              src="user.png"
-              width="40"
-              height="40"
-              alt="img"
-              class="testimonial-img"
-            />
-            <a href="#">
-              <span class="testimonial-name">John Doe</span>
-              <address>Newyork Us</address>
-            </a>
+          <div class="testimonial-container activeEl">
+            <div class="testimonial-body">
+              <span class="testimonial-title">The best health service!</span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              non a doloremque dicta, inventore quisquam fugit mollitia
+              recusandae hic delectus?
+            </div>
+            <div class="testimonial-header">
+              <img
+                src="user.png"
+                width="40"
+                height="40"
+                alt="img"
+                class="testimonial-img"
+              />
+              <a href="#">
+                <span class="testimonial-name">Another John Doe</span>
+                <address>Newyork Us</address>
+              </a>
+            </div>
+          </div>
+          <div class="testimonial-container">
+            <div class="testimonial-body">
+              <span class="testimonial-title">The best health service!</span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              non a doloremque dicta, inventore quisquam fugit mollitia
+              recusandae hic delectus?
+            </div>
+            <div class="testimonial-header">
+              <img
+                src="user.png"
+                width="40"
+                height="40"
+                alt="img"
+                class="testimonial-img"
+              />
+              <a href="#">
+                <span class="testimonial-name">Even another John Doe</span>
+                <address>Newyork Us</address>
+              </a>
+            </div>
           </div>
         </div>
       </div>
